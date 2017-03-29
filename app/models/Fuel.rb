@@ -1,11 +1,7 @@
 class Fuel < OpenStruct
 
   def self.find_elec(zip_code)
-    DeveloperService.new.developer(zip_code)[:fuel_stations]#.map do |stations|
-      #stations.map do |station|
-        #Fuel.new(station)
-      #end
-    #end
+    DeveloperService.new.developer(zip_code)[:fuel_stations]
   end
 
   def self.find_prop(zip_code)
