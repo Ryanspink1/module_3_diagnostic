@@ -1,0 +1,11 @@
+<h1> 10 Closest Fuel Stations </h1>
+
+<% @fuel_stations.each do |station| %>
+<ul>
+  <li>Name: <%= station[:station_name] %></li>
+  <li>Location:<%= station[:street_address]%> <%=station[:city]%> <%= station[:state] %></li>
+  <li>Fuel Type:<%= station[:fuel_type_code] %></li>
+  <li>Distance: <%= station[:distance] %></li>
+  <li>Access Times: <%= station[:access_days_time] %></li>
+</ul>
+<% end %>

@@ -20,6 +20,6 @@ class Fuel < OpenStruct
     sorted = total.sort_by do |station|
       station[:distance]
     end
-    sorted
+    sorted[0..9]
   end
 end
